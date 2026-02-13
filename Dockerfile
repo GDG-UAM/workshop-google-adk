@@ -31,6 +31,4 @@ USER appuser
 ENV PORT=8080
 ENV HOST=0.0.0.0
 
-# --- COMANDO DE ARRANQUE ---
-# Usamos el modo shell explícito y aseguramos host 0.0.0.0
 CMD ["sh", "-c", "adk web . --host 0.0.0.0 --port ${PORT}"]
