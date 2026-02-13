@@ -31,19 +31,7 @@ You must enable these APIs for the code to work. Click the links or search in th
 ## 2. Authentication (Service Account)
 
 The ADK needs permission to talk to Vertex AI. We use a **Service Account** for this.
-
-1.  Go to **IAM & Admin** > **Service Accounts**.
-2.  Click **+ CREATE SERVICE ACCOUNT**.
-    - **Name:** `adk-agent-sa`
-    - **Role:** `Vertex AI User` (This is crucial! Without this, you get 403 Errors).
-3.  **Generate Key:**
-    - Click the new Service Account email.
-    - Go to **KEYS** > **Add Key** > **Create new key** > **JSON**.
-4.  **Install:**
-    - Rename the downloaded file to `service_account.json`.
-    - Move it to the root of this project folder.
-
----
+Everything is ready in the provided 
 
 ## 3. Local Configuration
 
