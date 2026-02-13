@@ -9,22 +9,22 @@
 
 # 1. Dar permiso para construir (Cloud Build)
 
-gcloud projects add-iam-policy-binding project-c809664c-efec-464a-9ea \
- --member=serviceAccount:937925299175-compute@developer.gserviceaccount.com \
+gcloud projects add-iam-policy-binding elevated-style-487313-u8 \
+ --member=serviceAccount:745872905311-compute@developer.gserviceaccount.com \
  --role=roles/cloudbuild.builds.builder
 
 # 2. Dar permiso para escribir archivos temporales (Storage)
 
-gcloud projects add-iam-policy-binding project-c809664c-efec-464a-9ea \
- --member=serviceAccount:937925299175-compute@developer.gserviceaccount.com \
+gcloud projects add-iam-policy-binding elevated-style-487313-u8 \
+ --member=serviceAccount:745872905311-compute@developer.gserviceaccount.com \
  --role=roles/storage.objectAdmin
 
 # 3. Activar vertex api y darle permiso
 
-gcloud services enable aiplatform.googleapis.com --project project-c809664c-efec-464a-9ea
+gcloud services enable aiplatform.googleapis.com --project elevated-style-487313-u8
 
-gcloud projects add-iam-policy-binding project-c809664c-efec-464a-9ea \
- --member=serviceAccount:937925299175-compute@developer.gserviceaccount.com \
+gcloud projects add-iam-policy-binding elevated-style-487313-u8 \
+ --member=serviceAccount:745872905311-compute@developer.gserviceaccount.com \
  --role=roles/aiplatform.user
 
 5. desplegar en cloud run! (a mi me gusta con un deploy.sh desde consola por facilidad)
