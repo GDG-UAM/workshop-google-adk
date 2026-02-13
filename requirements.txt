@@ -1,0 +1,6 @@
+google-adk>=0.1.0
+google-cloud-aiplatform
+python-dotenv
+gunicorn
+requests
+uvicorn
